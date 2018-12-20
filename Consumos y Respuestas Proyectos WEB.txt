@@ -1,0 +1,45 @@
+Los servicios se consumen por POST, por medio de la herramienta postman, los parametros se envian en formato JSON {"nuCantidad":0,
+"sbCadena":""}
+
+Ejemplo Consumo TwoStrings:
+
+http://localhost:95/SpringTwoStrings/TwoStrings
+
+JSON:
+{"nuCantidad":4,
+
+"sbCadena":"wouldyoulikefries abcabcabcabcabcabc hackerrankcommunity cdecdecdecde jackandjill wentupthehill writetoyourparents fghmqzldbc"}
+
+Respuesta esperada:
+[
+    {
+        "message": "NO"
+    },
+    {
+        "message": "YES"
+    },
+    {
+        "message": "YES"
+    },
+    {
+        "message": "NO"
+    }
+]
+
+
+
+
+Ejemplo Consumo MinimunSwaps
+
+http://localhost:96/SpringMinimunSwaps/MinimunSwaps
+
+JSON:
+{"nuCantidad":10,
+"sbCadena":"3 7 6 9 1 8 10 4 2 5"}
+
+Respuesta esperada:
+[
+    {
+        "message": "9"
+    }
+]
